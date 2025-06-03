@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Podcast: El arte de la guerra - Episodio 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button, a#descargarAudio {
+      font-size: 16px;
+      padding: 10px 15px;
+      margin: 8px 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #0078d7;
+      color: white;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    button:hover, a#descargarAudio:hover {
+      background-color: #005fa3;
+    }
+    #transcript {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      max-height: 500px;
+      overflow-y: auto;
+      line-height: 1.5em;
+      font-size: 16px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎙️ Podcast: El arte de la guerra hoy – Episodio 3</h1>
+  <div style="text-align:center;">
+    <button onclick="leerPodcast()">▶️ Reproducir</button>
+    <button onclick="speechSynthesis.cancel()">⏹️ Detener</button>
+    <button onclick="grabar()">🔴 Grabar</button>
+    <button onclick="detenerGrabacion()">💾 Detener y Descargar</button>
+    <a id="descargarAudio" style="display:none;">⬇️ Descargar audio</a>
+  </div>
+
+  <div id="transcript" aria-label="Transcripción del podcast">
+Bienvenidos y bienvenidas a un nuevo episodio de El arte de la guerra hoy, donde exploramos los principios eternos de Sun Tzu y cómo aplicarlos en la vida moderna.
+
+Hoy vamos a sumergirnos en el Capítulo 3 del tratado: “La estrategia ofensiva”, aunque también hablaremos sobre su contraparte: la estrategia defensiva.
+
+Cita destacada:  
+“La habilidad suprema consiste en someter al enemigo sin luchar.” – Sun Tzu.
+
+Para comprender estas estrategias, recordemos el contexto histórico: la China del período de los Reinos Combatientes. Una época de guerras constantes, donde Sun Tzu sirvió al rey Helü de Wu.
